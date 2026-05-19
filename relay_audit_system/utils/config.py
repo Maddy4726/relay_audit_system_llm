@@ -34,15 +34,19 @@ def load_settings(*, env_file: Path | None = ENV_FILE) -> Settings:
     """
     from relay_audit_system.extraction.exceptions import ConfigurationError
 
+    # Shell / Cursor secrets take precedence over .env (override=False).
     if env_file and env_file.is_file():
-        load_dotenv(env_file)
+        load_dotenv(env_file, override=False)
     else:
-        load_dotenv()
+        load_dotenv(override=False)
 
     api_key = os.getenv("OPENAI_API_KEY", "").strip()
     if not api_key:
         raise ConfigurationError(
-            "OPENAI_API_KEY is not set. Add it to relay_audit_system/.env or the environment."
+            "OPENAI_API_KEY is not set. Either:\n"
+            "  1) Edit relay_audit_system/.env and set OPENAI_API_KEY=sk-...\n"
+            "  2) Export OPENAI_API_KEY in your shell before running\n"
+            "  3) Add OPENAI_API_KEY to Cursor project/environment secrets"
         )
 
     model = os.getenv("OPENAI_MODEL", DEFAULT_MODEL).strip() or DEFAULT_MODEL
