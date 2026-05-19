@@ -1,0 +1,104 @@
+{
+  "document_metadata": {
+    "report_title": null,
+    "report_number": null,
+    "report_date": null,
+    "site_name": "26",
+    "plant_or_substation": null,
+    "bay_or_panel": "CUBICAL NO.: 604",
+    "equipment_tag": null,
+    "client_name": null,
+    "contractor_name": null,
+    "tested_by": null,
+    "approved_by": null,
+    "test_standard": null,
+    "revision": null,
+    "language": null
+  },
+  "feeder": {
+    "feeder_type": "transformer",
+    "feeder_name": "INPUT TRANSFORMER BOOSTER FAN – 1D",
+    "feeder_tag": null,
+    "voltage_level": null,
+    "rated_current_a": null,
+    "rated_power": null,
+    "power_unit": null,
+    "ct_ratio": null,
+    "vt_ratio": null,
+    "nameplate": null,
+    "motor_details": null,
+    "transformer_details": null,
+    "bus_coupler_details": null,
+    "remarks": null
+  },
+  "circuit_breaker": null,
+  "current_transformers": [],
+  "relays": [],
+  "relay_measurements": [],
+  "protection_tests": [],
+  "transformer_tests": [
+    {
+      "test_name": "NAME PLATE DETAILS",
+      "category": "GENERAL",
+      "test_points": [],
+      "settings": [],
+      "overall_result": null,
+      "remarks": null
+    },
+    {
+      "test_name": "WINDING RESISTANCE TEST",
+      "category": "TRANSFORMER TESTING",
+      "test_points": [],
+      "settings": [],
+      "overall_result": null,
+      "remarks": "1)  All test results are found satisfactory."
+    },
+    {
+      "test_name": "NAME PLATE DETAILS",
+      "category": "GENERAL",
+      "test_points": [],
+      "settings": [],
+      "overall_result": null,
+      "remarks": null
+    },
+    {
+      "test_name": "WINDING RESISTANCE TEST",
+      "category": "TRANSFORMER TESTING",
+      "test_points": [],
+      "settings": [],
+      "overall_result": null,
+      "remarks": "1)  All test results are found satisfactory."
+    }
+  ],
+  "lt_breaker": null,
+  "earth_fault_lt_relay": null,
+  "isolator": null,
+  "reactor": null,
+  "vacuum_contactor": null,
+  "final_checks": null,
+  "remarks": null,
+  "extraction_metadata": {
+    "source_file": "SS26 CUB NO. 604 INPUT I OUTPUT TRF BOOSTER FAN -1D.docx",
+    "source_page_count": null,
+    "extracted_at": "2026-05-19T11:45:27.438640+00:00",
+    "extractor_version": "relay_audit_system",
+    "model_name": "gpt-4.1-mini",
+    "confidence_score": null,
+    "field_confidence": [],
+    "warnings": [
+      "Data appears truncated or incomplete; key numeric test values not extracted"
+    ],
+    "errors": [],
+    "raw_blocks": [
+      "TRANSFORMER FEEDER GENERAL TRANSFORMER TESTING 2.0 NAME PLATE DETAILS :- 2.1 WINDING RESISTANCE TEST:- 3.0 REMARKS:-  1)  All test results are found satisfactory.",
+      "LOCATION- SUBSTATION: 26 | LOCATION- SUBSTATION: 26 | CUBICAL NO.: 604 | LCP NO.: 19990 CB NO: NA | FEEDER :- INPUT TRANSFORMER BOOSTER FAN – 1D | FEEDER :- INPUT TRANSFORMER BOOSTER FAN – 1D | FEEDER :- INPUT TRANSFORMER BOOSTER FAN – 1D",
+      "MAKE | VOLTAMP TYPE | DRY VECTOR GROUP | Dy11d0 SL. NO. | 9911/2 RATING | 1000 / 550-550 KVA % IMPEDENCE | 5.39 % VOLTAGE RATIO | 6600 / 710 / 710 V CURRENT RATIO | 87.48 / 447.24 / 447.24 A",
+      "Tap No | Measured value HV side   in mΩ | Measured value HV side   in mΩ | Measured value HV side   in mΩ | Measured value HV side   in mΩ Tap No | 1U-1V | 1V-1W | 1W-1U NT | 284.3 | 283.7 | 284.2",
+      "Measured value LV side Resistance  in mΩ | Measured value LV side Resistance  in mΩ | Measured value LV side Resistance  in mΩ | Measured value LV side Resistance  in mΩ LV1 | 2u-2v | 2v-2w | 2w-2u LV1 | 5.087 | 5.071 | 5.091 LV1 | 2u-2n | 2v-2n | 2w-2n LV1 | 2.563 | 2.582 | 2.514 LV2 | 3u-3v | 3v-3w | 3w-3u LV2 | 5.291 | 5.240 | 5.250",
+      "LOCATION- SUBSTATION: 26 | LOCATION- SUBSTATION: 26 | CUBICAL NO.: 604 | LCP NO.: 19990 CB NO: NA | FEEDER :- OUTPUT TRANSFORMER TO VVVF MODE | FEEDER :- OUTPUT TRANSFORMER TO VVVF MODE | FEEDER :- OUTPUT TRANSFORMER TO VVVF MODE",
+      "MAKE | VOLTAMP TYPE | DRY VECTOR GROUP | Ynd11 SL. NO. | 9910/2 RATING | 1000 KVA % IMPEDENCE | 5.17 % VOLTAGE RATIO | 6.735 / 620 V CURRENT RATIO | 85.72 / 931.21 A",
+      "Tap No | Measured value HV side   in mΩ | Measured value HV side   in mΩ | Measured value HV side   in mΩ | Measured value HV side   in mΩ Tap No | 1U-1V | 1V-1W | 1W-1U NT | 303.0 | 303.1 | 303.2 NT | 1U-1N | 1V-1N | 1W-1N NT | 152.72 | 152.63 | 152.71",
+      "Measured value LV side Resistance  in mΩ | Measured value LV side Resistance  in mΩ | Measured value LV side Resistance  in mΩ 2u-2v | 2v-2w | 2w-2u 1855.7 | 1855.8 | 1856.0 2u-2n | 2v-2n | 2w-2n - | - | -"
+    ]
+  }
+}

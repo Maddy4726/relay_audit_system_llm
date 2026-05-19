@@ -1,0 +1,931 @@
+{
+  "document_metadata": {
+    "report_title": null,
+    "report_number": null,
+    "report_date": null,
+    "site_name": "73",
+    "plant_or_substation": "73",
+    "bay_or_panel": "613",
+    "equipment_tag": "614",
+    "client_name": null,
+    "contractor_name": null,
+    "tested_by": null,
+    "approved_by": null,
+    "test_standard": null,
+    "revision": null,
+    "language": null
+  },
+  "feeder": {
+    "feeder_type": null,
+    "feeder_name": "MWP – 5D",
+    "feeder_tag": null,
+    "voltage_level": null,
+    "rated_current_a": null,
+    "rated_power": null,
+    "power_unit": null,
+    "ct_ratio": null,
+    "vt_ratio": null,
+    "nameplate": null,
+    "motor_details": null,
+    "transformer_details": null,
+    "bus_coupler_details": null,
+    "remarks": null
+  },
+  "circuit_breaker": {
+    "tag": "614",
+    "nameplate": {
+      "manufacturer": "ABB",
+      "type_or_model": "VD4 12.12.40",
+      "serial_number": "1VYN0201130000872",
+      "rated_voltage_kv": "7.2 KV",
+      "rated_current_a": "1250 A",
+      "rated_power_mva": null,
+      "rated_power_mw": null,
+      "year_of_manufacture": null,
+      "additional_fields": [
+        {
+          "name": "Control Voltage",
+          "value": "220 VDC",
+          "unit": null,
+          "raw_text": null
+        }
+      ]
+    },
+    "breaker_type": null,
+    "rated_voltage_kv": "7.2 KV",
+    "rated_current_a": "1250 A",
+    "breaking_capacity_ka": null,
+    "operating_mechanism": null,
+    "control_voltage_v": "220 VDC",
+    "close_coil_test": {
+      "item": "Closing coil coil resistance",
+      "result": null,
+      "measured_value": "17.2 MΩ",
+      "expected_value": null,
+      "unit": "MΩ",
+      "remarks": null
+    },
+    "trip_coil_test": {
+      "item": "Tripping coil resistance",
+      "result": null,
+      "measured_value": "24.6 MΩ",
+      "expected_value": null,
+      "unit": "MΩ",
+      "remarks": null
+    },
+    "insulation_resistance_mohm": ">500 MΩ for R, Y, B phases at 5000 V",
+    "contact_resistance_μohm": null,
+    "timing_tests": [
+      {
+        "label": "Close",
+        "parameter": "time",
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 53,
+        "unit": "mSec",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      },
+      {
+        "label": "Open",
+        "parameter": "time",
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 42,
+        "unit": "mSec",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      },
+      {
+        "label": "Close – Open",
+        "parameter": "time",
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 43,
+        "unit": "mSec",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      }
+    ],
+    "functional_checks": [
+      {
+        "item": "Complete Tightness Of Relay Panel",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Measurement Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Protection Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Indications (ON/OFF/Trip)",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Communication (RXD & TXD)",
+        "result": "-",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Binary Input & Binary Output Checking",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Cleaning of Auxiliary Relay",
+        "result": "-",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Cleaning of PCB cards of Numerical Relay (if required)",
+        "result": "-",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Consolidate data & Control Scheme Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Trip of CB through Master Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Field Simulation of OTI/WTI/BUCH Fault Checked./ Motor Checked",
+        "result": "-",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "All CT Links Closed & Tightness Check after Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "All Protection Settings Normalized after Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Testing DR Downloaded from the RELAY",
+        "result": "-",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Auxiliary Relay (HR & SR) operation check.",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      }
+    ],
+    "remarks": "All test results are found satisfactory. EOR-3D found faulty wire shifted to REM 615 relay and checked. Tech trip, Emergency trip checked by shorting TB found OK. FCMA trip checked found OK but no field wire connected."
+  },
+  "current_transformers": [
+    {
+      "tag": "CT",
+      "location": null,
+      "phase": null,
+      "ratio": "75/1 A",
+      "accuracy_class": null,
+      "knee_point_voltage_v": null,
+      "burden_va": null,
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [
+        {
+          "label": "R",
+          "parameter": "Injected current in Primary (A)",
+          "applied_value": 75,
+          "expected_value": 75,
+          "measured_value": 75,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "Y",
+          "parameter": "Injected current in Primary (A)",
+          "applied_value": 75,
+          "expected_value": 75,
+          "measured_value": 75,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "B",
+          "parameter": "Injected current in Primary (A)",
+          "applied_value": 75,
+          "expected_value": 75,
+          "measured_value": 75,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "excitation_test": [],
+      "remarks": null
+    },
+    {
+      "tag": "CBCT",
+      "location": null,
+      "phase": null,
+      "ratio": "100/1 A",
+      "accuracy_class": null,
+      "knee_point_voltage_v": null,
+      "burden_va": null,
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [
+        {
+          "label": null,
+          "parameter": "Injected current in Primary (A)",
+          "applied_value": 10,
+          "expected_value": null,
+          "measured_value": 100,
+          "unit": "mA",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "excitation_test": [],
+      "remarks": null
+    }
+  ],
+  "relays": [
+    {
+      "tag": null,
+      "cubicle_or_panel": null,
+      "manufacturer": "ABB",
+      "model": "REM615",
+      "serial_number": "1VYV91095098",
+      "relay_technology": "numerical",
+      "relay_function": null,
+      "rated_voltage_v": null,
+      "ct_ratio_used": null,
+      "vt_ratio_used": null,
+      "numerical_details": null,
+      "electromechanical_details": null,
+      "installed_elements": [
+        "PHIPTOC1",
+        "MPTTR1",
+        "MNSPTOC1",
+        "MNSPTOC2",
+        "STTPMSU1",
+        "JAMPTOC1",
+        "DEFLPDEF1"
+      ],
+      "remarks": null
+    }
+  ],
+  "relay_measurements": [
+    {
+      "relay_label": "PHIPTOC1",
+      "parameter": "Set Current",
+      "phase": null,
+      "value": 9.7,
+      "unit": "x In",
+      "measurement_time": null,
+      "source": null,
+      "remarks": null
+    },
+    {
+      "relay_label": "MPTTR1",
+      "parameter": "Set Current",
+      "phase": null,
+      "value": 0.97,
+      "unit": "x In",
+      "measurement_time": null,
+      "source": null,
+      "remarks": null
+    },
+    {
+      "relay_label": "MNSPTOC1 Stage 1",
+      "parameter": "Set Current",
+      "phase": null,
+      "value": 0.29,
+      "unit": "x In",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "CURVE: DT, Delay = 4000 mSec"
+    },
+    {
+      "relay_label": "MNSPTOC2 Stage 2",
+      "parameter": "Set Current",
+      "phase": null,
+      "value": 0.29,
+      "unit": "x In",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "CURVE: Inv. Curve B, Time = 3000 mSec"
+    },
+    {
+      "relay_label": "STTPMSU1",
+      "parameter": "Set Current",
+      "phase": null,
+      "value": 2.0,
+      "unit": "x In",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Motor St. Current= 5.6 x In A, Start-up Time = 4 Sec, Start over delay= 10 Sec"
+    },
+    {
+      "relay_label": "JAMPTOC1",
+      "parameter": "Set Current",
+      "phase": null,
+      "value": 2.43,
+      "unit": "x In",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Time = 2000 mSec"
+    },
+    {
+      "relay_label": "DEFLPDEF1",
+      "parameter": "Set Current",
+      "phase": null,
+      "value": 0.05,
+      "unit": "x In A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Time = 500 mSec"
+    },
+    {
+      "relay_label": "PHIPTOC1",
+      "parameter": "Phase RYB Injected Current (A)",
+      "phase": "RYB",
+      "value": 9.7,
+      "unit": "A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Operated Time = 0.087 Sec"
+    },
+    {
+      "relay_label": "MPTTR1",
+      "parameter": "Phase RYB Injected Current (A)",
+      "phase": "RYB",
+      "value": 5.9,
+      "unit": "A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Calculated Time = 7.04 Sec, Operated Time = 7.173 Sec"
+    },
+    {
+      "relay_label": "MNSPTOC1",
+      "parameter": "Phase RYB Injected Current (A)",
+      "phase": "RYB",
+      "value": 0.5,
+      "unit": "A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Operated Time = 4.013 Sec"
+    },
+    {
+      "relay_label": "MNSPTOC2",
+      "parameter": "Phase RYB Injected Current (A)",
+      "phase": "RYB",
+      "value": 3,
+      "unit": "A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Operated Time = 3.785 Sec"
+    },
+    {
+      "relay_label": "STTPMSU1",
+      "parameter": "Phase RYB Injected Current (A)",
+      "phase": "RYB",
+      "value": 5.6,
+      "unit": "A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Operated Time = 4.004 Sec"
+    },
+    {
+      "relay_label": "JAMPTOC1",
+      "parameter": "Phase RYB Injected Current (A)",
+      "phase": "RYB",
+      "value": 2.43,
+      "unit": "A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Operated Time = 2.009 Sec"
+    },
+    {
+      "relay_label": "DEFLPDEF1",
+      "parameter": "Phase Io Injected Current (A)",
+      "phase": "Io",
+      "value": 5.6,
+      "unit": "A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "OPERATED"
+    }
+  ],
+  "protection_tests": [
+    {
+      "category": "Short Circuit",
+      "protection_code": "PHIPTOC1",
+      "relay_label": "PHIPTOC1",
+      "description": "Short Circuit",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": 9.7,
+          "unit": "x In",
+          "raw_text": null
+        },
+        {
+          "name": "Delay",
+          "value": 80,
+          "unit": "mSec",
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "RYB",
+          "parameter": "Injected Current",
+          "applied_value": 9.7,
+          "expected_value": null,
+          "measured_value": 0.087,
+          "unit": "s",
+          "tolerance": null,
+          "result": null,
+          "remarks": "Operated Time"
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Thermal Overload",
+      "protection_code": "MPTTR1",
+      "relay_label": "MPTTR1",
+      "description": "Thermal O/L",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": 0.97,
+          "unit": "x In",
+          "raw_text": null
+        },
+        {
+          "name": "Time const. Normal",
+          "value": 250,
+          "unit": "Sec",
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "RYB",
+          "parameter": "Injected Current",
+          "applied_value": 5.9,
+          "expected_value": 7.04,
+          "measured_value": 7.173,
+          "unit": "s",
+          "tolerance": null,
+          "result": null,
+          "remarks": "Operated Time"
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Negative Sequence",
+      "protection_code": "MNSPTOC1",
+      "relay_label": "MNSPTOC1",
+      "description": "Stage 1 Negative Sequence",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": 0.29,
+          "unit": "x In",
+          "raw_text": null
+        },
+        {
+          "name": "Curve",
+          "value": "DT",
+          "unit": null,
+          "raw_text": null
+        },
+        {
+          "name": "Delay",
+          "value": 4000,
+          "unit": "mSec",
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "RYB",
+          "parameter": "Injected Current",
+          "applied_value": 0.5,
+          "expected_value": null,
+          "measured_value": 4.013,
+          "unit": "s",
+          "tolerance": null,
+          "result": null,
+          "remarks": "Operated Time"
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Negative Sequence",
+      "protection_code": "MNSPTOC2",
+      "relay_label": "MNSPTOC2",
+      "description": "Stage 2 Negative Sequence",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": 0.29,
+          "unit": "x In",
+          "raw_text": null
+        },
+        {
+          "name": "Curve",
+          "value": "Inv. Curve B",
+          "unit": null,
+          "raw_text": null
+        },
+        {
+          "name": "Time",
+          "value": 3000,
+          "unit": "mSec",
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "RYB",
+          "parameter": "Injected Current",
+          "applied_value": 3,
+          "expected_value": null,
+          "measured_value": 3.785,
+          "unit": "s",
+          "tolerance": null,
+          "result": null,
+          "remarks": "Operated Time"
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Prolonged Start / Startup Supervision",
+      "protection_code": "STTPMSU1",
+      "relay_label": "STTPMSU1",
+      "description": "Prolonged Start/ Start-up Supervision",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": 2.0,
+          "unit": "x In",
+          "raw_text": null
+        },
+        {
+          "name": "Motor St. Current",
+          "value": 5.6,
+          "unit": "x In A",
+          "raw_text": null
+        },
+        {
+          "name": "Start-up Time",
+          "value": 4,
+          "unit": "Sec",
+          "raw_text": null
+        },
+        {
+          "name": "Start over delay",
+          "value": 10,
+          "unit": "Sec",
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "RYB",
+          "parameter": "Injected Current",
+          "applied_value": 5.6,
+          "expected_value": null,
+          "measured_value": 4.004,
+          "unit": "s",
+          "tolerance": null,
+          "result": null,
+          "remarks": "Operated Time"
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Jamming Protection",
+      "protection_code": "JAMPTOC1",
+      "relay_label": "JAMPTOC1",
+      "description": "Jamming Protection",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": 2.43,
+          "unit": "x In",
+          "raw_text": null
+        },
+        {
+          "name": "Time",
+          "value": 2000,
+          "unit": "mSec",
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "RYB",
+          "parameter": "Injected Current",
+          "applied_value": 2.43,
+          "expected_value": null,
+          "measured_value": 2.009,
+          "unit": "s",
+          "tolerance": null,
+          "result": null,
+          "remarks": "Operated Time"
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Earth Fault",
+      "protection_code": "DEFLPDEF1",
+      "relay_label": "DEFLPDEF1",
+      "description": "Earth Fault Protection (E/F) through CBCT",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": 0.05,
+          "unit": "x In A",
+          "raw_text": null
+        },
+        {
+          "name": "Time",
+          "value": 500,
+          "unit": "mSec",
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "Io",
+          "parameter": "Injected Current",
+          "applied_value": 5.6,
+          "expected_value": null,
+          "measured_value": null,
+          "unit": "A",
+          "tolerance": null,
+          "result": "pass",
+          "remarks": "OPERATED"
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    }
+  ],
+  "transformer_tests": [],
+  "lt_breaker": null,
+  "earth_fault_lt_relay": null,
+  "isolator": null,
+  "reactor": null,
+  "vacuum_contactor": null,
+  "final_checks": {
+    "overall_result": "pass",
+    "checklist": [],
+    "interlocks_verified": [],
+    "alarms_verified": [],
+    "labels_and_placards_ok": null,
+    "tested_by": null,
+    "tested_date": null,
+    "witnessed_by": null,
+    "witnessed_date": null,
+    "remarks": null
+  },
+  "remarks": "1) All test results are found satisfactory.\n2) EOR-3D found faulty wire shifted to REM 615 relay and checked.\n3) Tech trip, Emergency trip checked by shorting TB found OK.\nFCMA trip checked found OK but no field wire connected.",
+  "extraction_metadata": {
+    "source_file": "SS73 CUB NO. 613 MWP - 5D.docx",
+    "source_page_count": null,
+    "extracted_at": "2026-05-19T11:50:42.805317+00:00",
+    "extractor_version": "relay_audit_system",
+    "model_name": "gpt-4.1-mini",
+    "confidence_score": 0.95,
+    "field_confidence": [
+      {
+        "name": "circuit_breaker",
+        "value": 0.98,
+        "unit": null,
+        "raw_text": null
+      },
+      {
+        "name": "protection_tests",
+        "value": 0.94,
+        "unit": null,
+        "raw_text": null
+      },
+      {
+        "name": "relays",
+        "value": 0.9,
+        "unit": null,
+        "raw_text": null
+      }
+    ],
+    "warnings": [],
+    "errors": [],
+    "raw_blocks": [
+      "GENERAL",
+      "CIRCUIT BREAKER",
+      "2.1 NAME PLATE DETAILS :-",
+      "2.2INSULATION RESISTANCE TEST: (MEASURED VALUES IN G\u0003a)",
+      "2.3 COIL RESISTANCE TEST:",
+      "2.4 CONTACT RESISTANCE TEST: \u001f Applied Current (100A)",
+      "2.5 TIME INTERVAL TEST:",
+      "CURRENT TRANSFORMER",
+      "3. RATIO TEST: (BY PRIMARY INJECTION)",
+      "3.1 CT (CTR:    75 / 1   A)",
+      "3.2 CBCT (RATIO:  100  / 1  A)",
+      "RELAY TESTING",
+      "4.0 PROTECTION TESTING ( BY SECONDARY INJECTION)",
+      "4.1  MEASUREMENTS:-",
+      "4.2 SHORT CIRCUIT:\tPHIPTOC1",
+      "Set Current =    9.70  x In\t\tDelay =   80  mSec",
+      "4.3 THERMAL O/L:\tMPTTR1",
+      "Set Current =     0.97    x In\t\tTime const. normal =   250   Sec",
+      "4.4 NEGATIVE SEQUENCE:\tMNSPTOC1",
+      "STAGE 1:\t     Set Current =  0.29   x In       CURVE: DT                Delay = 4000 mSec",
+      "MNSPTOC2",
+      "STAGE 2: \t     Set Current =   0.29  x In       CURVE: Inv. Curve B   Time =  3000 mSec",
+      "4.5 PROLONGED START/ STARTUP SUPERVISION:\t  STTPMSU1",
+      "Set Current = 2.0 x In, Motor St. Current=  5.6 x In A, Start-up Time =  4 Sec, Start over delay=  10 Sec",
+      "4.6 JAMMING PROTECTION:\tJAMPTOC1",
+      "Set Current =  2.43 x In\t\tTime =   2000  mSec",
+      "4.7 EARTH FAULT PROTECTION (E/F): OPERATED THROUGH CBCT",
+      "DEFLPDEF1                  Set Current =    0.050     x In A\t       Time =  500  mSec",
+      "5.0 FINAL CHECKS",
+      "6.0 REMARKS:   1) All test results are found satisfactory.",
+      "2) EOR-3D found faulty wire shifted to REM 615 relay and checked.",
+      "3) Tech trip, Emergency trip checked by shorting TB found OK. FCMA trip checked found OK but no field wire connected.",
+      "[TABLE 1]",
+      "LOCATION- SUBSTATION: 73 | LOCATION- SUBSTATION: 73 | CUBICAL NO. : 613 | LCP NO.: 4667",
+      "CB NO: 614 | FEEDER: MWP \u0013 5D | FEEDER: MWP \u0013 5D | FEEDER: MWP \u0013 5D",
+      "[TABLE 2]",
+      "Make | ABB",
+      "Type | VD4 12.12.40",
+      "Sl. No. | 1VYN0201130000872",
+      "Rated Voltage | 7.2 KV",
+      "Rated Current | 1250 A",
+      "Control Voltage | 220 VDC",
+      "[TABLE 3]",
+      "Reference | Breaker Condition | Applied Voltage (V) | R phase | Y phase | B phase",
+      "Pole \u0013 Pole\u0019 | Open | 5000 | >500 | >500 | >500",
+      "Phase \u0013 Phase | Close | 5000 | >500 | >500 | >500",
+      "Pole \u0013 Earth | Close | 5000 | >500 | >500 | >500",
+      "[TABLE 4]",
+      "Terminal Reference | Measured Resistance in m\u00039",
+      "Closing coil | 17.2 M\u00039",
+      "Tripping Coil | 24.6 M\u00039",
+      "Spring charge motor | 110.2",
+      "[TABLE 5]",
+      "Phase Ref. | Measured Resistance in",
+      "Micro ohms",
+      "R | 16.8",
+      "Y | 18.2",
+      "B | 17.2",
+      "[TABLE 6]",
+      "Operation Ref. | Measured Time in milli Seconds | Measured Time in milli Seconds | Measured Time in milli Seconds",
+      "Operation Ref. | R | Y | B",
+      "Close | 53 | 53 | 53",
+      "Open | 42 | 42 | 42",
+      "Close \u0013 Open | 43 | 43 | 43",
+      "[TABLE 7]",
+      "Phase Ref. | Injected current in Primary (A) | Measured current in Secondary ( A ) @DISPLAY | Measured current in Secondary ( A ) @DISPLAY | Measured current in Secondary ( A ) @DISPLAY | Measured current in Secondary ( A ) @DISPLAY",
+      "Phase Ref. | Injected current in Primary (A) | RELAY | ENERGY METER | ICT | AMMETER",
+      "R | 75 | 75 | - | - | -",
+      "Y | 75 | 75 | - | - | 75",
+      "B | 75 | 75 | - | - | -",
+      "[TABLE 8]",
+      "Injected current in Primary (A) | Measured current in Secondary (mA)",
+      "10 | 100",
+      "[TABLE 9]",
+      "MAKE | ABB",
+      "MODEL | REM615",
+      "SL. NO. | 1VYV91095098",
+      "[TABLE 10]",
+      "REF | INJECTED (A) | MEASURED(A) IN RELAY",
+      "R | 1 | 75.0",
+      "Y | 1 | 74.9",
+      "B | 1 | 75.1",
+      "[TABLE 11]",
+      "Phase | Injected Current (A) | Operated Time (Sec)",
+      "RYB | 9.70 | 0.087",
+      "[TABLE 12]",
+      "Phase | Injected Current (A) | Calculated Time (Sec) | Operated Time (Sec)",
+      "RYB | 5.90 | 7.04 | 7.173",
+      "[TABLE 13]",
+      "Phase | Injected Current (A) | Operated Time (Sec)",
+      "RYB | 0.50 | 4.013",
+      "[TABLE 14]",
+      "Phase | Injected Current (A) X6 | Operated Time (Sec)",
+      "RYB | 3 | 3.785",
+      "[TABLE 15]",
+      "Phase | Injected Current (A) | Operated Time (Sec)",
+      "RYB | 5.6 | 4.004",
+      "[TABLE 16]",
+      "Phase | Injected Current (A) | Operated Time (Sec)",
+      "RYB | 2.43 | 2.009",
+      "[TABLE 17]",
+      "Phase | Injected Current (A) | Operated Time (Sec)",
+      "Io | 5.6 | OPERATED",
+      "[TABLE 18]",
+      "S N | OBSERVATION | STATUS | RESULT",
+      "1 | Complete Tightness Of Relay Panel | DONE | OK",
+      "2 | Relay Measurement Testing | DONE | OK",
+      "3 | Relay Protection Testing | DONE | OK",
+      "4 | Relay Indications (ON/OFF/Trip) | DONE | OK",
+      "5 | Relay Communication (RXD & TXD) | - | -",
+      "6 | Binary Input & Binary Output Checking | DONE | OK",
+      "7 | Cleaning of Auxiliary Relay | - | -",
+      "8 | Cleaning of PCB cards of Numerical Relay (if required) | - | -",
+      "9 | Consolidate data & Control Scheme Checked | DONE | OK",
+      "10 | Trip of CB through Master Checked | DONE | OK",
+      "11 | Field Simulation of OTI/WTI/BUCH Fault Checked./ Motor Checked | - | -",
+      "12 | All CT Links Closed & Tightness Check after",
+      "Testing | DONE | OK",
+      "13 | All Protection Settings Normalized after Testing | DONE | OK",
+      "14 | Testing DR Downloaded from the RELAY | - | -",
+      "15 | Auxiliary Relay (HR & SR) operation check. | DONE | OK"
+    ]
+  }
+}

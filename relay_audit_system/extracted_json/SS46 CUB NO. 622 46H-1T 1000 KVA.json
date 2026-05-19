@@ -1,0 +1,587 @@
+{
+  "document_metadata": {
+    "report_title": null,
+    "report_number": null,
+    "report_date": null,
+    "site_name": "46",
+    "plant_or_substation": "46",
+    "bay_or_panel": "622",
+    "equipment_tag": "46H – 1T 1000 KVA",
+    "client_name": null,
+    "contractor_name": null,
+    "tested_by": null,
+    "approved_by": null,
+    "test_standard": null,
+    "revision": null,
+    "language": null
+  },
+  "feeder": {
+    "feeder_type": "transformer",
+    "feeder_name": "46H – 1T 1000 KVA",
+    "feeder_tag": null,
+    "voltage_level": null,
+    "rated_current_a": 1250.0,
+    "rated_power": "1000",
+    "power_unit": "KVA",
+    "ct_ratio": null,
+    "vt_ratio": null,
+    "nameplate": null,
+    "motor_details": null,
+    "transformer_details": {
+      "transformer_tag": null,
+      "vector_group": "Yyn12",
+      "impedance_percent": "5.24 %",
+      "primary_voltage_kv": 6.6,
+      "secondary_voltage_kv": 0.433,
+      "tap_position": null,
+      "cooling_type": null
+    },
+    "bus_coupler_details": null,
+    "remarks": null
+  },
+  "circuit_breaker": {
+    "tag": "609",
+    "nameplate": {
+      "manufacturer": "ABB",
+      "type_or_model": "VD4 12.12.40",
+      "serial_number": "1VYN020113001428",
+      "rated_voltage_kv": "7.2 KV",
+      "rated_current_a": 1250.0,
+      "rated_power_mva": null,
+      "rated_power_mw": null,
+      "year_of_manufacture": null,
+      "additional_fields": [
+        {
+          "name": "Control Voltage",
+          "value": "220 VDC",
+          "unit": null,
+          "raw_text": null
+        }
+      ]
+    },
+    "breaker_type": null,
+    "rated_voltage_kv": "7.2 KV",
+    "rated_current_a": 1250.0,
+    "breaking_capacity_ka": null,
+    "operating_mechanism": null,
+    "control_voltage_v": "220 VDC",
+    "close_coil_test": {
+      "item": "Closing coil coil resistance",
+      "result": null,
+      "measured_value": "17.4 MΩ",
+      "expected_value": null,
+      "unit": "MΩ",
+      "remarks": null
+    },
+    "trip_coil_test": {
+      "item": "Tripping coil resistance",
+      "result": null,
+      "measured_value": "12.0 MΩ",
+      "expected_value": null,
+      "unit": "MΩ",
+      "remarks": null
+    },
+    "insulation_resistance_mohm": ">500 MΩ on all phases for various applied voltages",
+    "contact_resistance_μohm": null,
+    "timing_tests": [
+      {
+        "label": "Close",
+        "parameter": "time",
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 57,
+        "unit": "ms",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      },
+      {
+        "label": "Open",
+        "parameter": "time",
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 45,
+        "unit": "ms",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      },
+      {
+        "label": "Close - Open",
+        "parameter": "time",
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 47,
+        "unit": "ms",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      }
+    ],
+    "functional_checks": [],
+    "remarks": null
+  },
+  "current_transformers": [
+    {
+      "tag": "CT",
+      "location": "primary injection",
+      "phase": "R",
+      "ratio": "250 / 1 A",
+      "accuracy_class": null,
+      "knee_point_voltage_v": null,
+      "burden_va": null,
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [
+        {
+          "label": "R",
+          "parameter": "current",
+          "applied_value": 250,
+          "expected_value": 250,
+          "measured_value": 250,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "Y",
+          "parameter": "current",
+          "applied_value": 250,
+          "expected_value": 250,
+          "measured_value": 250,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "B",
+          "parameter": "current",
+          "applied_value": 250,
+          "expected_value": 250,
+          "measured_value": 250,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "excitation_test": [],
+      "remarks": null
+    },
+    {
+      "tag": "CBCT",
+      "location": null,
+      "phase": null,
+      "ratio": "100 / 1 A",
+      "accuracy_class": null,
+      "knee_point_voltage_v": null,
+      "burden_va": null,
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [
+        {
+          "label": "CBCT",
+          "parameter": "current",
+          "applied_value": 10,
+          "expected_value": null,
+          "measured_value": 0.0989,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "excitation_test": [],
+      "remarks": null
+    }
+  ],
+  "relays": [
+    {
+      "tag": null,
+      "cubicle_or_panel": null,
+      "manufacturer": "ABB",
+      "model": "REF 615",
+      "serial_number": "1VYV91095436",
+      "relay_technology": "numerical",
+      "relay_function": "feeder protection",
+      "rated_voltage_v": null,
+      "ct_ratio_used": null,
+      "vt_ratio_used": null,
+      "numerical_details": null,
+      "electromechanical_details": null,
+      "installed_elements": [
+        "50",
+        "51",
+        "49",
+        "46",
+        "DTOC"
+      ],
+      "remarks": "REF615 relay earth fault programming done & EOR 3D Wiring shifted to REF615."
+    }
+  ],
+  "relay_measurements": [
+    {
+      "relay_label": "PHIPTOC1",
+      "parameter": "set current",
+      "phase": "RYB",
+      "value": 8.4,
+      "unit": "xIn",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Delay Time = 40 mSec"
+    },
+    {
+      "relay_label": "DPHLPDOC1",
+      "parameter": "set current",
+      "phase": "RYB",
+      "value": 0.35,
+      "unit": "xIn",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Curve= NI, TMS=0.30"
+    },
+    {
+      "relay_label": "Earth fault protection (E/F)",
+      "parameter": "set current",
+      "phase": "A",
+      "value": 0.04,
+      "unit": "xIn A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": "Time = 500 mSec"
+    }
+  ],
+  "protection_tests": [
+    {
+      "category": "overcurrent",
+      "protection_code": "50/51",
+      "relay_label": "DPHLPDOC1",
+      "description": "Overcurrent low set",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": "0.35 x In",
+          "unit": null,
+          "raw_text": null
+        },
+        {
+          "name": "CURVE",
+          "value": "NI",
+          "unit": null,
+          "raw_text": null
+        },
+        {
+          "name": "TMS",
+          "value": 0.3,
+          "unit": null,
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "X2",
+          "parameter": "Injected Current (A)",
+          "applied_value": 0.7,
+          "expected_value": null,
+          "measured_value": 3.027,
+          "unit": "s",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "X4",
+          "parameter": "Injected Current (A)",
+          "applied_value": 1.4,
+          "expected_value": null,
+          "measured_value": 1.497,
+          "unit": "s",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "X6",
+          "parameter": "Injected Current (A)",
+          "applied_value": 2.1,
+          "expected_value": null,
+          "measured_value": 1.159,
+          "unit": "s",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "overcurrent",
+      "protection_code": "50",
+      "relay_label": "PHIPTOC1",
+      "description": "Short circuit protection",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": "8.40 xIn",
+          "unit": null,
+          "raw_text": null
+        },
+        {
+          "name": "Delay Time",
+          "value": "40 mSec",
+          "unit": null,
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "RYB",
+          "parameter": "Injected Current (A)",
+          "applied_value": 8.4,
+          "expected_value": null,
+          "measured_value": 0.049,
+          "unit": "s",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "overall_result": null,
+      "remarks": "Reserve Panel WTI alarm and trip relay check while shorting TB found ok.",
+      "metadata": []
+    },
+    {
+      "category": "earth fault",
+      "protection_code": "50N",
+      "relay_label": "Earth fault protection (E/F)",
+      "description": "Earth fault protection (E/F) operated through CBCT",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": "0.040 x In A",
+          "unit": null,
+          "raw_text": null
+        },
+        {
+          "name": "Time",
+          "value": "500 mSec",
+          "unit": null,
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "Io",
+          "parameter": "Injected Current (A)",
+          "applied_value": 4.2,
+          "expected_value": "OPERATED",
+          "measured_value": "OPERATED",
+          "unit": null,
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    }
+  ],
+  "transformer_tests": [
+    {
+      "test_name": "Winding Resistance Test",
+      "category": "electrical",
+      "test_points": [],
+      "settings": [],
+      "overall_result": null,
+      "remarks": null
+    },
+    {
+      "test_name": "Voltage Ratio Test",
+      "category": "electrical",
+      "test_points": [],
+      "settings": [],
+      "overall_result": null,
+      "remarks": null
+    },
+    {
+      "test_name": "Magnetic Balance Test (At Normal Tap)",
+      "category": "electrical",
+      "test_points": [],
+      "settings": [],
+      "overall_result": null,
+      "remarks": null
+    },
+    {
+      "test_name": "Magnetizing Current Test",
+      "category": "electrical",
+      "test_points": [],
+      "settings": [],
+      "overall_result": null,
+      "remarks": null
+    }
+  ],
+  "lt_breaker": null,
+  "earth_fault_lt_relay": null,
+  "isolator": null,
+  "reactor": null,
+  "vacuum_contactor": null,
+  "final_checks": {
+    "overall_result": null,
+    "checklist": [
+      {
+        "item": "Complete Tightness Of Relay Panel",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Measurement Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Protection Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Indications (ON/OFF/Trip)",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Communication (RXD & TXD)",
+        "result": "-",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Binary Input & Binary Output Checking",
+        "result": "-",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Cleaning of Auxiliary Relay",
+        "result": "-",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Cleaning of PCB cards of Numerical Relay (if required)",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Consolidate data & Control Scheme Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Trip of CB through Master Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Field Simulation of OTI/WTI/BUCH Fault Checked./ Motor Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "All CT Links Closed & Tightness Check after Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "All Protection Settings Normalized after Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Testing DR Downloaded from the RELAY",
+        "result": "-",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Auxiliary Relay (HR & SR) operation check.",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      }
+    ],
+    "interlocks_verified": [],
+    "alarms_verified": [],
+    "labels_and_placards_ok": null,
+    "tested_by": null,
+    "tested_date": null,
+    "witnessed_by": null,
+    "witnessed_date": null,
+    "remarks": null
+  },
+  "remarks": {
+    "general": "1) All test results are found satisfactory.\n2) REF615 relay earth fault programming done & EOR 3D Wiring shifted to REF615.\n3) Reserve Panel WTI alarm and trip relay check while shorting TB found ok.",
+    "deficiencies": null,
+    "recommendations": null,
+    "safety_notes": null,
+    "additional_sections": []
+  },
+  "extraction_metadata": {
+    "source_file": "SS46 CUB NO. 622 46H-1T 1000 KVA.docx",
+    "source_page_count": null,
+    "extracted_at": "2026-05-19T11:49:18.226783+00:00",
+    "extractor_version": "relay_audit_system",
+    "model_name": "gpt-4.1-mini",
+    "confidence_score": null,
+    "field_confidence": [],
+    "warnings": [
+      "Some relay communication and binary input/output checking results marked as '-' (not available)."
+    ],
+    "errors": [],
+    "raw_blocks": []
+  }
+}

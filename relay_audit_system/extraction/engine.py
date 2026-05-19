@@ -164,7 +164,7 @@ def _attach_extraction_metadata(
         model_name=model_name,
         warnings=merged_warnings,
         errors=list(existing.errors) if existing and existing.errors else [],
-        field_confidence=dict(existing.field_confidence) if existing and existing.field_confidence else {},
+        field_confidence=list(existing.field_confidence) if existing and existing.field_confidence else [],
         confidence_score=existing.confidence_score if existing else None,
         source_page_count=existing.source_page_count if existing else None,
         raw_blocks=list(existing.raw_blocks) if existing and existing.raw_blocks else [],

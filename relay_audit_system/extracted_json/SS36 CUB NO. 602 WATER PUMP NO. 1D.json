@@ -1,0 +1,698 @@
+{
+  "document_metadata": {
+    "report_title": null,
+    "report_number": null,
+    "report_date": null,
+    "site_name": null,
+    "plant_or_substation": "36",
+    "bay_or_panel": "602",
+    "equipment_tag": "02",
+    "client_name": null,
+    "contractor_name": null,
+    "tested_by": null,
+    "approved_by": null,
+    "test_standard": null,
+    "revision": null,
+    "language": null
+  },
+  "feeder": {
+    "feeder_type": null,
+    "feeder_name": "WATER PUMP NO. -1 D",
+    "feeder_tag": null,
+    "voltage_level": null,
+    "rated_current_a": null,
+    "rated_power": null,
+    "power_unit": null,
+    "ct_ratio": null,
+    "vt_ratio": null,
+    "nameplate": null,
+    "motor_details": null,
+    "transformer_details": null,
+    "bus_coupler_details": null,
+    "remarks": null
+  },
+  "circuit_breaker": {
+    "tag": "02",
+    "nameplate": {
+      "manufacturer": "SIEMENS",
+      "type_or_model": "3AH 3163-3",
+      "serial_number": "17808",
+      "rated_voltage_kv": "12 KV",
+      "rated_current_a": "1600 A",
+      "rated_power_mva": null,
+      "rated_power_mw": null,
+      "year_of_manufacture": null,
+      "additional_fields": [
+        {
+          "name": "Control Voltage",
+          "value": "110 VDC",
+          "unit": null,
+          "raw_text": null
+        }
+      ]
+    },
+    "breaker_type": null,
+    "rated_voltage_kv": "12 KV",
+    "rated_current_a": "1600 A",
+    "breaking_capacity_ka": null,
+    "operating_mechanism": null,
+    "control_voltage_v": "110 VDC",
+    "close_coil_test": {
+      "item": "Closing coil coil resistance test",
+      "result": null,
+      "measured_value": 89.1,
+      "expected_value": null,
+      "unit": "Ω",
+      "remarks": null
+    },
+    "trip_coil_test": {
+      "item": "Tripping coil coil resistance test",
+      "result": null,
+      "measured_value": 62.6,
+      "expected_value": null,
+      "unit": "Ω",
+      "remarks": null
+    },
+    "insulation_resistance_mohm": ">500",
+    "contact_resistance_μohm": 21.5,
+    "timing_tests": [
+      {
+        "label": "Close",
+        "parameter": null,
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 55,
+        "unit": "ms",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      },
+      {
+        "label": "Open",
+        "parameter": null,
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 48,
+        "unit": "ms",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      },
+      {
+        "label": "Close - Open",
+        "parameter": null,
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 52,
+        "unit": "ms",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      }
+    ],
+    "functional_checks": [
+      {
+        "item": "Complete Tightness Of Relay Panel",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Measurement Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Protection Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Indications (ON/OFF/Trip)",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Communication (RXD & TXD)",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Binary Input & Binary Output Checking",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Consolidate data & Control Scheme Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Trip of CB through Master Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "All CT Links Closed & Tightness Check after Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "All Protection Settings Normalized after Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Auxiliary Relay (HR & SR) operation check.",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      }
+    ],
+    "remarks": "1) All test results are found satisfactory."
+  },
+  "current_transformers": [
+    {
+      "tag": "CT",
+      "location": null,
+      "phase": "R",
+      "ratio": "40/1 A",
+      "accuracy_class": null,
+      "knee_point_voltage_v": null,
+      "burden_va": null,
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [
+        {
+          "label": "R",
+          "parameter": "Injected current Primary",
+          "applied_value": 40,
+          "expected_value": 40,
+          "measured_value": 40,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "Y",
+          "parameter": "Injected current Primary",
+          "applied_value": null,
+          "expected_value": 40,
+          "measured_value": 40,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "B",
+          "parameter": "Injected current Primary",
+          "applied_value": 40,
+          "expected_value": 40,
+          "measured_value": 40,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "excitation_test": [],
+      "remarks": null
+    },
+    {
+      "tag": "CBCT",
+      "location": null,
+      "phase": null,
+      "ratio": "30/1 A",
+      "accuracy_class": null,
+      "knee_point_voltage_v": null,
+      "burden_va": null,
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [
+        {
+          "label": null,
+          "parameter": "Injected current Primary",
+          "applied_value": 10,
+          "expected_value": null,
+          "measured_value": 0.333,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "excitation_test": [],
+      "remarks": null
+    }
+  ],
+  "relays": [
+    {
+      "tag": null,
+      "cubicle_or_panel": "602",
+      "manufacturer": "SIEMENS",
+      "model": "7SK8042 53B90 – 1HEO/BB",
+      "serial_number": null,
+      "relay_technology": null,
+      "relay_function": null,
+      "rated_voltage_v": null,
+      "ct_ratio_used": null,
+      "vt_ratio_used": null,
+      "numerical_details": null,
+      "electromechanical_details": null,
+      "installed_elements": [],
+      "remarks": null
+    }
+  ],
+  "relay_measurements": [
+    {
+      "relay_label": null,
+      "parameter": "Measured current in Relay",
+      "phase": "R",
+      "value": 40,
+      "unit": "A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": null
+    },
+    {
+      "relay_label": null,
+      "parameter": "Measured current in Relay",
+      "phase": "Y",
+      "value": 40,
+      "unit": "A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": null
+    },
+    {
+      "relay_label": null,
+      "parameter": "Measured current in Relay",
+      "phase": "B",
+      "value": 40,
+      "unit": "A",
+      "measurement_time": null,
+      "source": null,
+      "remarks": null
+    }
+  ],
+  "protection_tests": [
+    {
+      "category": "Short Circuit",
+      "protection_code": "50-1",
+      "relay_label": null,
+      "description": null,
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": "7.00",
+          "unit": "x In",
+          "raw_text": "Set Current =  7.00 x In"
+        },
+        {
+          "name": "Delay",
+          "value": 0.04,
+          "unit": "Sec",
+          "raw_text": "Delay =     0.04    Sec"
+        }
+      ],
+      "test_points": [
+        {
+          "label": "RYB",
+          "parameter": "Injected Current",
+          "applied_value": 7.0,
+          "expected_value": null,
+          "measured_value": 0.053,
+          "unit": "Sec",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Thermal Overload",
+      "protection_code": "49",
+      "relay_label": null,
+      "description": null,
+      "settings": [
+        {
+          "name": "K factor",
+          "value": 0.9,
+          "unit": null,
+          "raw_text": "K factor  = 0.90"
+        },
+        {
+          "name": "Time constant",
+          "value": "15 Min",
+          "unit": null,
+          "raw_text": "Time const.=  15 Min @ 2 MIN for checking"
+        }
+      ],
+      "test_points": [],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Negative Sequence",
+      "protection_code": "46-1",
+      "relay_label": null,
+      "description": "STAGE 1",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": "0.20",
+          "unit": "x In",
+          "raw_text": "Set Current =       0.20   x In"
+        },
+        {
+          "name": "Curve",
+          "value": "DT",
+          "unit": null,
+          "raw_text": "CURVE:  DT"
+        },
+        {
+          "name": "Delay",
+          "value": "3",
+          "unit": "Sec",
+          "raw_text": "Delay = 3 Sec"
+        }
+      ],
+      "test_points": [
+        {
+          "label": "RYB",
+          "parameter": "Injected Current",
+          "applied_value": 0.2,
+          "expected_value": null,
+          "measured_value": 3.041,
+          "unit": "Sec",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Negative Sequence",
+      "protection_code": "46 TOC",
+      "relay_label": null,
+      "description": "STAGE 2",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": "0.50",
+          "unit": "x In",
+          "raw_text": "Set Current =    0.50 x In"
+        },
+        {
+          "name": "Curve",
+          "value": "NI",
+          "unit": null,
+          "raw_text": "CURVE: NI"
+        },
+        {
+          "name": "TMS",
+          "value": "1",
+          "unit": "Sec",
+          "raw_text": "TMS = 1 Sec"
+        }
+      ],
+      "test_points": [],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Prolonged Start / Startup Supervision",
+      "protection_code": "48",
+      "relay_label": null,
+      "description": null,
+      "settings": [
+        {
+          "name": "Mode",
+          "value": "I²T",
+          "unit": null,
+          "raw_text": "Mode= I²T"
+        },
+        {
+          "name": "Motor St. Current",
+          "value": "3.0",
+          "unit": "x In A",
+          "raw_text": "Motor St. Current=  3.0 x In A"
+        },
+        {
+          "name": "Time",
+          "value": "8.0",
+          "unit": "Sec",
+          "raw_text": "Time= 8.0 Sec"
+        }
+      ],
+      "test_points": [],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Jamming Protection",
+      "protection_code": "JAMPTOC1",
+      "relay_label": null,
+      "description": null,
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": "1.50",
+          "unit": "x In",
+          "raw_text": "Set Current =     1.50 x In"
+        },
+        {
+          "name": "Time Start Block",
+          "value": "8.00",
+          "unit": "Sec",
+          "raw_text": "Time Start Block = 8.00 Sec"
+        },
+        {
+          "name": "Time Delay",
+          "value": "3",
+          "unit": "Sec",
+          "raw_text": "Time Delay = 3  Sec"
+        }
+      ],
+      "test_points": [],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "Earth Fault Protection",
+      "protection_code": "50Ns – 2",
+      "relay_label": null,
+      "description": "OPERATED THROUGH CBCT",
+      "settings": [
+        {
+          "name": "Set Current",
+          "value": "0.100",
+          "unit": "x In A",
+          "raw_text": "Set Current =     0.100  x In A"
+        },
+        {
+          "name": "Time",
+          "value": "0.05",
+          "unit": "Sec",
+          "raw_text": "Time = 0.05 Sec"
+        }
+      ],
+      "test_points": [
+        {
+          "label": "Io CT1",
+          "parameter": "Injected Current",
+          "applied_value": 3.1,
+          "expected_value": null,
+          "measured_value": "OPERATED",
+          "unit": null,
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "CTI + CT2",
+          "parameter": "Injected Current",
+          "applied_value": 1.4,
+          "expected_value": null,
+          "measured_value": "OPERATED",
+          "unit": null,
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    }
+  ],
+  "transformer_tests": [],
+  "lt_breaker": null,
+  "earth_fault_lt_relay": null,
+  "isolator": null,
+  "reactor": null,
+  "vacuum_contactor": null,
+  "final_checks": {
+    "overall_result": null,
+    "checklist": [
+      {
+        "item": "Complete Tightness Of Relay Panel",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Measurement Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Protection Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Indications (ON/OFF/Trip)",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Communication (RXD & TXD)",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Binary Input & Binary Output Checking",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Consolidate data & Control Scheme Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Trip of CB through Master Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "All CT Links Closed & Tightness Check after Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "All Protection Settings Normalized after Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Auxiliary Relay (HR & SR) operation check.",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      }
+    ],
+    "interlocks_verified": [],
+    "alarms_verified": [],
+    "labels_and_placards_ok": null,
+    "tested_by": null,
+    "tested_date": null,
+    "witnessed_by": null,
+    "witnessed_date": null,
+    "remarks": null
+  },
+  "remarks": {
+    "general": "1) All test results are found satisfactory.",
+    "deficiencies": null,
+    "recommendations": null,
+    "safety_notes": null,
+    "additional_sections": []
+  },
+  "extraction_metadata": {
+    "source_file": "SS36 CUB NO. 602 WATER PUMP NO. 1D.docx",
+    "source_page_count": null,
+    "extracted_at": "2026-05-19T11:48:40.681663+00:00",
+    "extractor_version": "relay_audit_system",
+    "model_name": "gpt-4.1-mini",
+    "confidence_score": null,
+    "field_confidence": [],
+    "warnings": [],
+    "errors": [],
+    "raw_blocks": []
+  }
+}

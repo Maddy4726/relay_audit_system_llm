@@ -10,8 +10,6 @@ from __future__ import annotations
 
 from datetime import date, datetime
 from enum import StrEnum
-from typing import Any
-
 from pydantic import BaseModel, ConfigDict, Field
 
 
@@ -154,8 +152,8 @@ class ProtectionTest(ExtractionModel):
         description="Aggregate result for this protection test when reported once.",
     )
     remarks: str | None = None
-    metadata: dict[str, Any] = Field(
-        default_factory=dict,
+    metadata: list[SettingEntry] = Field(
+        default_factory=list,
         description="Template-specific keys not modeled elsewhere (curve type, zone, etc.).",
     )
 
@@ -196,9 +194,9 @@ class ExtractionMetadata(ExtractionModel):
     extractor_version: str | None = None
     model_name: str | None = None
     confidence_score: float | None = Field(default=None, ge=0.0, le=1.0)
-    field_confidence: dict[str, float] = Field(
-        default_factory=dict,
-        description="Optional per-field or per-section confidence scores.",
+    field_confidence: list[SettingEntry] = Field(
+        default_factory=list,
+        description="Per-field or per-section confidence scores (name=field, value=score).",
     )
     warnings: list[str] = Field(default_factory=list)
     errors: list[str] = Field(default_factory=list)

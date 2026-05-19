@@ -1,0 +1,452 @@
+{
+  "document_metadata": {
+    "report_title": null,
+    "report_number": null,
+    "report_date": null,
+    "site_name": "SUBSTATION: 26",
+    "plant_or_substation": "SUBSTATION: 26",
+    "bay_or_panel": "CUBICAL NO.: 604",
+    "equipment_tag": "BOOSTER FAN – 1D",
+    "client_name": null,
+    "contractor_name": null,
+    "tested_by": null,
+    "approved_by": null,
+    "test_standard": null,
+    "revision": null,
+    "language": null
+  },
+  "feeder": {
+    "feeder_type": null,
+    "feeder_name": "BOOSTER FAN – 1D",
+    "feeder_tag": null,
+    "voltage_level": null,
+    "rated_current_a": null,
+    "rated_power": null,
+    "power_unit": null,
+    "ct_ratio": null,
+    "vt_ratio": null,
+    "nameplate": null,
+    "motor_details": null,
+    "transformer_details": null,
+    "bus_coupler_details": null,
+    "remarks": null
+  },
+  "circuit_breaker": {
+    "tag": "NA",
+    "nameplate": {
+      "manufacturer": "ABB",
+      "type_or_model": "HCA 12/1240",
+      "serial_number": "V3541",
+      "rated_voltage_kv": "12 KV",
+      "rated_current_a": "1250 A",
+      "rated_power_mva": null,
+      "rated_power_mw": null,
+      "year_of_manufacture": null,
+      "additional_fields": [
+        {
+          "name": "Control Voltage",
+          "value": "110 VDC",
+          "unit": null,
+          "raw_text": "Control Voltage | 110 VDC"
+        }
+      ]
+    },
+    "breaker_type": null,
+    "rated_voltage_kv": "12 KV",
+    "rated_current_a": "1250 A",
+    "breaking_capacity_ka": null,
+    "operating_mechanism": null,
+    "control_voltage_v": "110 VDC",
+    "close_coil_test": {
+      "item": "Closing coil coil resistance test",
+      "result": null,
+      "measured_value": 73.6,
+      "expected_value": null,
+      "unit": "Ohm",
+      "remarks": null
+    },
+    "trip_coil_test": {
+      "item": "Tripping coil coil resistance test",
+      "result": null,
+      "measured_value": 70.6,
+      "expected_value": null,
+      "unit": "Ohm",
+      "remarks": null
+    },
+    "insulation_resistance_mohm": ">500",
+    "contact_resistance_μohm": null,
+    "timing_tests": [
+      {
+        "label": "Close",
+        "parameter": "Time in milli Seconds",
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 41,
+        "unit": "ms",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      },
+      {
+        "label": "Open",
+        "parameter": "Time in milli Seconds",
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 36,
+        "unit": "ms",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      },
+      {
+        "label": "Close – Open",
+        "parameter": "Time in milli Seconds",
+        "applied_value": null,
+        "expected_value": null,
+        "measured_value": 45,
+        "unit": "ms",
+        "tolerance": null,
+        "result": null,
+        "remarks": null
+      }
+    ],
+    "functional_checks": [
+      {
+        "item": "Spring charging motor found faulty",
+        "result": "fail",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      }
+    ],
+    "remarks": "Spring charging motor found faulty informed to PSD."
+  },
+  "current_transformers": [
+    {
+      "tag": "CT",
+      "location": null,
+      "phase": null,
+      "ratio": "100/5 A",
+      "accuracy_class": null,
+      "knee_point_voltage_v": null,
+      "burden_va": null,
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [
+        {
+          "label": "R",
+          "parameter": "Injected current in Primary",
+          "applied_value": 100,
+          "expected_value": 5,
+          "measured_value": 5,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "B",
+          "parameter": "Injected current in Primary",
+          "applied_value": 100,
+          "expected_value": 5,
+          "measured_value": 5,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "excitation_test": [],
+      "remarks": null
+    },
+    {
+      "tag": "CBCT",
+      "location": null,
+      "phase": null,
+      "ratio": "200/1 A",
+      "accuracy_class": null,
+      "knee_point_voltage_v": null,
+      "burden_va": null,
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [
+        {
+          "label": "CBCT",
+          "parameter": "Injected current in Primary",
+          "applied_value": 10,
+          "expected_value": 50,
+          "measured_value": 50,
+          "unit": "mA",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
+      "excitation_test": [],
+      "remarks": null
+    }
+  ],
+  "relays": [],
+  "relay_measurements": [],
+  "protection_tests": [
+    {
+      "category": "over current",
+      "protection_code": "50/51",
+      "relay_label": null,
+      "description": "OVER CURRENT",
+      "settings": [
+        {
+          "name": "Setting",
+          "value": "800 %",
+          "unit": null,
+          "raw_text": "Setting=   800 %"
+        },
+        {
+          "name": "TMS",
+          "value": "INST",
+          "unit": null,
+          "raw_text": "TMS = INST"
+        }
+      ],
+      "test_points": [],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "earth fault",
+      "protection_code": "50N",
+      "relay_label": null,
+      "description": "EARTH FAULT PROTECTION (E/F)",
+      "settings": [
+        {
+          "name": "Setting",
+          "value": "1%",
+          "unit": null,
+          "raw_text": "Setting=    1%"
+        },
+        {
+          "name": "TMS",
+          "value": "0.1 sec",
+          "unit": "sec",
+          "raw_text": "TMS=  0.1   sec"
+        }
+      ],
+      "test_points": [
+        {
+          "label": "Io",
+          "parameter": "Injected Current",
+          "applied_value": 2.7,
+          "expected_value": "OPERATED",
+          "measured_value": null,
+          "unit": "A",
+          "tolerance": null,
+          "result": "pass",
+          "remarks": null
+        },
+        {
+          "label": "Io",
+          "parameter": "Operation",
+          "applied_value": 2.7,
+          "expected_value": "OPERATED",
+          "measured_value": null,
+          "unit": "A",
+          "tolerance": null,
+          "result": "pass",
+          "remarks": null
+        }
+      ],
+      "overall_result": null,
+      "remarks": null,
+      "metadata": []
+    }
+  ],
+  "transformer_tests": [],
+  "lt_breaker": null,
+  "earth_fault_lt_relay": null,
+  "isolator": null,
+  "reactor": null,
+  "vacuum_contactor": null,
+  "final_checks": {
+    "overall_result": "OK",
+    "checklist": [
+      {
+        "item": "Complete Tightness Of Relay Panel",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Measurement Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Protection Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay Indications (ON/OFF/Trip)",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Cleaning of PCB cards of Numerical Relay (if required)/Electromechanical relay",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Consolidate data & Control Scheme Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Trip of CB through Master Checked",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "All Protection Settings Normalized after Testing",
+        "result": "OK",
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      }
+    ],
+    "interlocks_verified": [],
+    "alarms_verified": [],
+    "labels_and_placards_ok": "OK",
+    "tested_by": null,
+    "tested_date": null,
+    "witnessed_by": null,
+    "witnessed_date": null,
+    "remarks": null
+  },
+  "remarks": {
+    "general": "All test results are found satisfactory.",
+    "deficiencies": "Spring charging motor found faulty informed to PSD.",
+    "recommendations": null,
+    "safety_notes": null,
+    "additional_sections": []
+  },
+  "extraction_metadata": {
+    "source_file": "SS26 CUB NO. 604 BOOSTER FAN - 1D.docx",
+    "source_page_count": null,
+    "extracted_at": "2026-05-19T11:45:09.562450+00:00",
+    "extractor_version": "relay_audit_system",
+    "model_name": "gpt-4.1-mini",
+    "confidence_score": null,
+    "field_confidence": [],
+    "warnings": [],
+    "errors": [],
+    "raw_blocks": [
+      "CUBICLE FEEDER",
+      "GENERAL",
+      "CIRCUIT BREAKER",
+      "2.1 Name Plate Details :-",
+      "2.2 NSULATION RESISTANCE TEST:- (MEASURED VALUES IN G\b3)",
+      "2.3 COIL RESISTANCE TEST:-",
+      "2.4 CONTACT RESISTANCE TEST:- \n Applied Current (100A)",
+      "2.5 TIME INTERVAL TEST:-",
+      "CURRENT TRANSFORMER",
+      "3. RATIO TEST:- (BY PRIMARY INJECTION)",
+      "3.1 CT (CTR:-   100  / 5  A )",
+      "3.2 CBCT (RATIO:-  200 / 1  A )",
+      "3.3 EARTH FAULT PROTECTION (E/F):- THROUGH CBCT",
+      "RELAY TESTING",
+      "Name Plate Details :-",
+      "4.0 PROTECTION TESTING:",
+      "4.1 OVER CURRENT:",
+      "Setting=   800 %                                              TMS = INST",
+      "4.2EARTH FAULT PROTECTION (E/F):",
+      "Setting=    1%                                              TMS=  0.1   sec",
+      "5.0 FINAL CHECKS:-",
+      "6.0 REMARKS: -1) All test results are found satisfactory.",
+      "2) Spring charging motor found faulty informed to PSD.",
+      ".",
+      "LOCATION- SUBSTATION: 26 | LOCATION- SUBSTATION: 26 | CUBICAL NO.: 604 | LCP NO.: 19988",
+      "CB NO: NA | FEEDER :- BOOSTER FAN \t61D | FEEDER :- BOOSTER FAN \t61D | FEEDER :- BOOSTER FAN \t61D",
+      "Make | ABB",
+      "Type | HCA 12/1240",
+      "Sl. No. | V3541",
+      "Rated Voltage | 12 KV",
+      "Rated Current | 1250 A",
+      "Control Voltage | 110 VDC",
+      "Reference | Breaker Condition | Applied Voltage (V) | R phase | Y phase | B phase",
+      "Pole \t\tPole\u0019 | Open | 5000 | >500 | >500 | >500",
+      "Phase \t\tPhase | Close | 5000 | >500 | >500 | >500",
+      "Pole \t Earth | Close | 5000 | >500 | >500 | >500",
+      "Terminal Reference | Measured Resistance in \u00038",
+      "Closing coil | 73.6",
+      "Tripping Coil | 70.6",
+      "Spring charge motor | Faulty",
+      "Phase Ref. | Measured Resistance in \nMicro ohms",
+      "R | 42.54",
+      "Y | 34.3",
+      "B | 46.5",
+      "Operation Ref. | Measured Time in milli Seconds | Measured Time in milli Seconds | Measured Time in milli Seconds",
+      "Operation Ref. | R | Y | B",
+      "Close | 41 | 41 | 41",
+      "Open | 36 | 36 | 36",
+      "Close \t\tOpen | 45 | 45 | 45",
+      "Phase Ref. | Injected current in Primary (A) | Measured current in Secondary Side ( A ) | Measured current in Secondary Side ( A ) | Measured current in Secondary Side ( A ) | Measured current in Secondary Side ( A )",
+      "Phase Ref. | Injected current in Primary (A) | RELAY | ENERGY METER | TRANSDUCER",
+      "(P) | AMMETER",
+      "R | 100 | 5 | - | - | 100",
+      "B | 100 | 5 | - | - | 100",
+      "Phase | Injected current in Primary (A) | Measured current in Secondary (mA)",
+      "CBCT | 10 | 50",
+      "Phase | Injected Current (A) | Operated Time (Sec)",
+      "Io | 2.7 | OPERATED",
+      "Make | ENGLISH ELECTRIC",
+      "Model(O/C ,E/F) | CTMM49DF5A/CTU15AF8003AD(M)",
+      "Sl. No. (O/C ,E/F) | M664753/M605319",
+      "Phase | Injected Current (A) | Operated Time (Sec)",
+      "R | 68 | OPERATED",
+      "Y | - | -",
+      "B | 69 | OPERATED",
+      "Phase | Operation(A) | Operated Time (Sec)",
+      "Io | 2.7 | OPERATED",
+      "S N | OBSERVATION | STATUS | RESULT",
+      "1 | Complete Tightness Of Relay Panel | DONE | OK",
+      "2 | Relay Measurement Testing | DONE | OK",
+      "3 | Relay Protection Testing | DONE | OK",
+      "4 | Relay Indications (ON/OFF/Trip) | DONE | OK",
+      "5 | Relay Communication (RXD & TXD) | - | -",
+      "6 | Binary Input & Binary Output Checking | - | -",
+      "7 | Cleaning of Auxiliary Relay | - | -",
+      "8 | Cleaning of PCB cards of Numerical Relay (if required)/Electromechanical relay | DONE | OK",
+      "9 | Consolidate data & Control Scheme Checked | DONE | OK",
+      "10 | Trip of CB through Master Checked | DONE | OK",
+      "11 | Field Simulation of OTI/WTI/BUCH Fault Checked./ Motor Checked | - | -",
+      "12 | All CT Links Closed & Tightness Check after",
+      "Testing | - | -",
+      "13 | All Protection Settings Normalized after Testing | DONE | OK",
+      "14 | Testing DR Downloaded from the RELAY | - | -",
+      "15 | Auxiliary Relay (HR & SR) operation check. | - | -"
+    ]
+  }
+}
