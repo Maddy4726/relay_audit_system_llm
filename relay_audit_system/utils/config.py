@@ -40,7 +40,7 @@ def load_settings(*, env_file: Path | None = ENV_FILE) -> Settings:
     else:
         load_dotenv(override=False)
 
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    api_key = os.getenv("OPENAI_API_KEY", "").strip().strip('"').strip("'")
     if not api_key:
         raise ConfigurationError(
             "OPENAI_API_KEY is not set. Either:\n"
