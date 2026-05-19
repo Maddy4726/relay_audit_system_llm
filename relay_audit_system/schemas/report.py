@@ -122,11 +122,11 @@ class ChecklistItem(ExtractionModel):
 
 class ProtectionTest(ExtractionModel):
     """
-  Flexible protection test block.
+    Flexible protection test block.
 
-  Use ``category`` for functional grouping (e.g. 'overcurrent', 'differential')
-  and ``protection_code`` for element codes (e.g. '50', '51', '49', '46', 'DTOC').
-  """
+    Use ``category`` for functional grouping (e.g. 'overcurrent', 'differential')
+    and ``protection_code`` for element codes (e.g. '50', '51', '49', '46', 'DTOC').
+    """
 
     category: str | None = Field(
         default=None,
