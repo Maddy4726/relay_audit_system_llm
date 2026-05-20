@@ -3,10 +3,10 @@
     "report_title": null,
     "report_number": null,
     "report_date": null,
-    "site_name": "15",
-    "plant_or_substation": "15",
-    "bay_or_panel": "609",
-    "equipment_tag": "CB NO: 09",
+    "site_name": "SUBSTATION 15",
+    "plant_or_substation": null,
+    "bay_or_panel": "CUBICAL NO. 609",
+    "equipment_tag": "FEEDER CAF – 1",
     "client_name": null,
     "contractor_name": null,
     "tested_by": null,
@@ -19,8 +19,8 @@
     "feeder_type": null,
     "feeder_name": "CAF – 1",
     "feeder_tag": null,
-    "voltage_level": "12 KV",
-    "rated_current_a": 1250.0,
+    "voltage_level": null,
+    "rated_current_a": null,
     "rated_power": null,
     "power_unit": null,
     "ct_ratio": null,
@@ -32,13 +32,13 @@
     "remarks": null
   },
   "circuit_breaker": {
-    "tag": "CB NO: 09",
+    "tag": "CB NO 09",
     "nameplate": {
       "manufacturer": "SIEMENS",
       "type_or_model": "3AH 3116-2",
       "serial_number": "N8 29930",
       "rated_voltage_kv": "12 KV",
-      "rated_current_a": 1250.0,
+      "rated_current_a": "1250 A",
       "rated_power_mva": null,
       "rated_power_mw": null,
       "year_of_manufacture": null,
@@ -53,61 +53,47 @@
     },
     "breaker_type": null,
     "rated_voltage_kv": "12 KV",
-    "rated_current_a": 1250.0,
+    "rated_current_a": "1250 A",
     "breaking_capacity_ka": null,
     "operating_mechanism": null,
     "control_voltage_v": "110 VDC",
-    "close_coil_test": {
-      "item": "Closing coil resistance",
-      "result": null,
-      "measured_value": 60.2,
-      "expected_value": null,
-      "unit": "Ω",
-      "remarks": null
-    },
-    "trip_coil_test": {
-      "item": "Tripping Coil resistance",
-      "result": null,
-      "measured_value": 61.2,
-      "expected_value": null,
-      "unit": "Ω",
-      "remarks": null
-    },
-    "insulation_resistance_mohm": 0.968,
-    "contact_resistance_μohm": "R=25.5, Y=26.9, B=27.5",
+    "close_coil_test": null,
+    "trip_coil_test": null,
+    "insulation_resistance_mohm": null,
+    "contact_resistance_μohm": null,
     "timing_tests": [
       {
         "label": "Close",
-        "parameter": "time",
+        "parameter": null,
         "applied_value": null,
         "expected_value": null,
         "measured_value": 68,
         "unit": "milli Seconds",
         "tolerance": null,
         "result": null,
-        "remarks": "R,Y,B phases equal"
+        "remarks": null
       },
       {
         "label": "Open",
-        "parameter": "time",
+        "parameter": null,
         "applied_value": null,
         "expected_value": null,
         "measured_value": 57,
         "unit": "milli Seconds",
         "tolerance": null,
         "result": null,
-        "remarks": "R,Y,B phases equal"
+        "remarks": null
       },
       {
-        "label": "Close - Open",
-        "parameter": "time",
+        "label": "Close – Open",
+        "parameter": null,
         "applied_value": null,
         "expected_value": null,
         "measured_value": 63,
         "unit": "milli Seconds",
         "tolerance": null,
         "result": null,
-        "remarks": "R,Y,B phases equal"
+        "remarks": null
       }
     ],
     "functional_checks": [],
@@ -116,9 +102,9 @@
   "current_transformers": [
     {
       "tag": "CT",
-      "location": null,
+      "location": "line",
       "phase": null,
-      "ratio": "75 / 5 A",
+      "ratio": "75/5 A",
       "accuracy_class": null,
       "knee_point_voltage_v": null,
       "burden_va": null,
@@ -127,36 +113,36 @@
       "ratio_test": [
         {
           "label": "R",
-          "parameter": "injected primary current",
+          "parameter": "current",
           "applied_value": 75,
           "expected_value": 75,
           "measured_value": 75,
           "unit": "A",
           "tolerance": null,
           "result": null,
-          "remarks": "Relay"
+          "remarks": null
         },
         {
           "label": "Y",
-          "parameter": "injected primary current",
-          "applied_value": 75,
-          "expected_value": 75,
-          "measured_value": null,
-          "unit": "A",
-          "tolerance": null,
-          "result": null,
-          "remarks": "Energy Meter"
-        },
-        {
-          "label": "B",
-          "parameter": "injected primary current",
+          "parameter": "current",
           "applied_value": 75,
           "expected_value": 75,
           "measured_value": 75,
           "unit": "A",
           "tolerance": null,
           "result": null,
-          "remarks": "ICT"
+          "remarks": null
+        },
+        {
+          "label": "B",
+          "parameter": "current",
+          "applied_value": 75,
+          "expected_value": 75,
+          "measured_value": 75,
+          "unit": "A",
+          "tolerance": null,
+          "result": null,
+          "remarks": null
         }
       ],
       "excitation_test": [],
@@ -164,9 +150,9 @@
     },
     {
       "tag": "CBCT",
-      "location": null,
+      "location": "earth",
       "phase": null,
-      "ratio": "125 / 1 A",
+      "ratio": "125/1 A",
       "accuracy_class": null,
       "knee_point_voltage_v": null,
       "burden_va": null,
@@ -175,11 +161,11 @@
       "ratio_test": [
         {
           "label": "Injected current",
-          "parameter": "primary",
+          "parameter": "current",
           "applied_value": 10,
           "expected_value": null,
-          "measured_value": 78,
-          "unit": "mA",
+          "measured_value": 0.078,
+          "unit": "A",
           "tolerance": null,
           "result": null,
           "remarks": null
@@ -204,13 +190,12 @@
       "numerical_details": null,
       "electromechanical_details": null,
       "installed_elements": [
-        "50/51",
+        "50/51 OC",
         "49",
         "I2>",
-        "I2>>",
         "48",
         "51 LR",
-        "Earth Fault (E/F)"
+        "E/F"
       ],
       "remarks": null
     }
@@ -218,41 +203,41 @@
   "relay_measurements": [
     {
       "relay_label": null,
-      "parameter": "Injected Current",
+      "parameter": "Meas. Current in Relay",
       "phase": "R",
-      "value": 5,
+      "value": 75.0,
       "unit": "A",
       "measurement_time": null,
-      "source": "Relay",
+      "source": null,
       "remarks": null
     },
     {
       "relay_label": null,
-      "parameter": "Injected Current",
+      "parameter": "Meas. Current in Relay",
       "phase": "Y",
-      "value": 5,
+      "value": 74.78,
       "unit": "A",
       "measurement_time": null,
-      "source": "Relay",
+      "source": null,
       "remarks": null
     },
     {
       "relay_label": null,
-      "parameter": "Injected Current",
+      "parameter": "Meas. Current in Relay",
       "phase": "B",
-      "value": 5,
+      "value": 74.79,
       "unit": "A",
       "measurement_time": null,
-      "source": "Relay",
+      "source": null,
       "remarks": null
     }
   ],
   "protection_tests": [
     {
-      "category": "short circuit",
+      "category": "overcurrent",
       "protection_code": "50/51 OC",
       "relay_label": null,
-      "description": "Set Current = 6.80 x In, CURVE: DT, Delay = 80 mSec",
+      "description": "SHORT CIRCUIT: 50/51 OC",
       "settings": [
         {
           "name": "Set Current",
@@ -273,7 +258,19 @@
           "raw_text": "Delay =  80 mSec"
         }
       ],
-      "test_points": [],
+      "test_points": [
+        {
+          "label": null,
+          "parameter": null,
+          "applied_value": null,
+          "expected_value": null,
+          "measured_value": null,
+          "unit": null,
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        }
+      ],
       "overall_result": null,
       "remarks": null,
       "metadata": []
@@ -282,7 +279,7 @@
       "category": "thermal overload",
       "protection_code": "49",
       "relay_label": null,
-      "description": "Set Current = 0.68 x In, Time const. = 18 min",
+      "description": "THERMAL O/L: 49",
       "settings": [
         {
           "name": "Set Current",
@@ -304,9 +301,9 @@
     },
     {
       "category": "negative sequence",
-      "protection_code": "I2>",
+      "protection_code": "I2> Stage 1",
       "relay_label": null,
-      "description": "STAGE 1: Set Current = 0.21 x In, CURVE: DT, Delay = 4 Sec",
+      "description": "NEGATIVE SEQUENCE: I2> STAGE 1",
       "settings": [
         {
           "name": "Set Current",
@@ -334,9 +331,9 @@
     },
     {
       "category": "negative sequence",
-      "protection_code": "I2>>",
+      "protection_code": "I2>> Stage 2",
       "relay_label": null,
-      "description": "STAGE 2: Set Current = 0.21 x In, CURVE: SI, TMS = 2.0",
+      "description": "NEGATIVE SEQUENCE: I2>> STAGE 2",
       "settings": [
         {
           "name": "Set Current",
@@ -348,7 +345,7 @@
           "name": "Curve",
           "value": "SI",
           "unit": null,
-          "raw_text": "CURVE:    SI"
+          "raw_text": "CURVE: SI"
         },
         {
           "name": "TMS",
@@ -363,10 +360,10 @@
       "metadata": []
     },
     {
-      "category": "starting supervision",
+      "category": "startup supervision",
       "protection_code": "48",
       "relay_label": null,
-      "description": "Mode= I²T, Motor Start Criteria Current= 1.70 x In A, Time = 20 Sec",
+      "description": "PROLONGED START/ STARTUP SUPERVISION: 48",
       "settings": [
         {
           "name": "Mode",
@@ -396,7 +393,7 @@
       "category": "jamming protection",
       "protection_code": "51 LR",
       "relay_label": null,
-      "description": "Set Current = 1.36 x In, Time = 4 Sec",
+      "description": "JAMMING PROTECTION: 51 LR",
       "settings": [
         {
           "name": "Set Current",
@@ -418,9 +415,9 @@
     },
     {
       "category": "earth fault",
-      "protection_code": "EARTH FAULT PROTECTION (E/F)",
+      "protection_code": "E/F",
       "relay_label": null,
-      "description": "Set Current = 0.04 x In A, Time = 0.5 Sec, Operated through CBCT",
+      "description": "EARTH FAULT PROTECTION (E/F) OPERATED THROUGH CBCT",
       "settings": [
         {
           "name": "Set Current",
@@ -433,12 +430,6 @@
           "value": 0.5,
           "unit": "Sec",
           "raw_text": "Time =     0.5    Sec"
-        },
-        {
-          "name": "Operated Through",
-          "value": "CBCT",
-          "unit": null,
-          "raw_text": "OPERATED THROUGH CBCT"
         }
       ],
       "test_points": [],
@@ -452,27 +443,7 @@
   "earth_fault_lt_relay": null,
   "isolator": null,
   "reactor": null,
-  "vacuum_contactor": {
-    "tag": null,
-    "nameplate": {
-      "manufacturer": null,
-      "type_or_model": null,
-      "serial_number": null,
-      "rated_voltage_kv": null,
-      "rated_current_a": null,
-      "rated_power_mva": null,
-      "rated_power_mw": null,
-      "year_of_manufacture": null,
-      "additional_fields": []
-    },
-    "rated_voltage_v": null,
-    "rated_current_a": null,
-    "control_voltage_v": null,
-    "coil_tests": [],
-    "contact_resistance": [],
-    "timing_tests": [],
-    "remarks": "NA"
-  },
+  "vacuum_contactor": null,
   "final_checks": {
     "overall_result": null,
     "checklist": [
@@ -606,17 +577,86 @@
     "witnessed_date": null,
     "remarks": null
   },
-  "remarks": "1) All test results are found satisfactory.",
+  "remarks": "All test results are found satisfactory.",
   "extraction_metadata": {
     "source_file": "SS15 CUB NO. 609 CAF-1.docx",
     "source_page_count": null,
-    "extracted_at": "2026-05-19T11:42:44.483646+00:00",
+    "extracted_at": "2026-05-20T02:52:46.650527+00:00",
     "extractor_version": "relay_audit_system",
     "model_name": "gpt-4.1-mini",
-    "confidence_score": null,
-    "field_confidence": [],
-    "warnings": [],
+    "confidence_score": 0.85,
+    "field_confidence": [
+      {
+        "name": "circuit_breaker",
+        "value": 0.9,
+        "unit": null,
+        "raw_text": null
+      },
+      {
+        "name": "protection_tests",
+        "value": 0.8,
+        "unit": null,
+        "raw_text": null
+      }
+    ],
+    "warnings": [
+      "No explicit feeder type identified.",
+      "Vacuum Contactor data not provided (not present or marked N/A)."
+    ],
     "errors": [],
-    "raw_blocks": []
+    "raw_blocks": [
+      "GENERAL",
+      "CIRCUIT BREAKER",
+      "2.1 NAME PLATE DETAILS :-",
+      "2.2INSULATION RESISTANCE TEST: (MEASURED VALUES IN GΩ)",
+      "2.3 COIL RESISTANCE TEST:",
+      "2.4 CONTACT RESISTANCE TEST: Applied Current (100A)",
+      "2.5 TIME INTERVAL TEST:",
+      "CURRENT TRANSFORMER",
+      "3. RATIO TEST: (BY PRIMARY INJECTION)",
+      "3.1 CT (CTR: 75 / 5 A)",
+      "3.2 CBCT (RATIO: 125 / 1 A)",
+      "RELAY",
+      "4.0 PROTECTION TESTING ( BY SECONDARY INJECTION)",
+      "4.1 MEASUREMENTS:-",
+      "4.2 SHORT CIRCUIT: 50/51 OC",
+      "Set Current = 6.80 x In CURVE: DT, Delay = 80 mSec",
+      "4.3 THERMAL O/L: 49",
+      "Set Current = 0.68 x In Time const.= 18 min",
+      "4.4 NEGATIVE SEQUENCE: I2>",
+      "STAGE 1: Set Current = 0.21 x In CURVE: DT , Delay = 4 Sec",
+      "I2>> STAGE 2: Set Current = 0.21 x In CURVE: SI TMS = 2.0",
+      "4.5 PROLONGED START/ STARTUP SUPERVISION: 48",
+      "Mode= I²T , Motor St. Criteria Current= 1.70 x In A Time = 20 Sec",
+      "4.6 JAMMING PROTECTION: 51 LR",
+      "Set Current = 1.36 x In Time = 4 Sec",
+      "4.7 EARTH FAULT PROTECTION (E/F): OPERATED THROUGH CBCT",
+      "Set Current = 0.04 x In A Time = 0.5 Sec",
+      "VACUUM CONTACTOR (NA)",
+      "5.0 NAME PLATE DETAILS :-",
+      "5.1 CONTACT RESISTANCE TEST: Applied Current (100A)",
+      "6.0 FINAL CHECKS",
+      "7.0 REMARKS: 1) All test results are found satisfactory.",
+      "[TABLE 1] LOCATION- SUBSTATION: 15 | LOCATION- SUBSTATION: 15 | CUBICAL NO. : 609 | LCP NO.: 5221 CB NO: 09 | FEEDER: CAF – 1 | FEEDER: CAF – 1 | FEEDER: CAF – 1",
+      "[TABLE 2] Make | SIEMENS Type | 3AH 3116-2 Sl. No. | N8 29930 Rated Voltage | 12 KV Rated Current | 1250 A Control Voltage | 110 VDC",
+      "[TABLE 3] Reference | Breaker Condition | Applied Voltage (V) | R phase | Y phase | B phase Pole – Pole’ | Open | 5000 | >500 | >500 | >500 Phase – Phase | Close | 5000 | >500 | >500 | >500 Pole – Earth | Close | 5000 | >500 | >500 | >500",
+      "[TABLE 4] Terminal Reference | Measured Resistance in Ω Closing coil | 60.2 Tripping Coil | 61.2 Spring charge motor | 0.968 MΩ",
+      "[TABLE 5] Phase Ref. | Measured Resistance in Micro ohms R | 25.5 Y | 26.9 B | 27.5",
+      "[TABLE 6] Operation Ref. | Measured Time in milli Seconds | Measured Time in milli Seconds | Measured Time in milli Seconds Operation Ref. | R | Y | B Close | 68 | 68 | 68 Open | 57 | 57 | 57 Close – Open | 63 | 63 | 63",
+      "[TABLE 7] Phase Ref. | Injected current in Primary (A) | Measured current in Secondary ( A ) | Measured current in Secondary ( A ) | Measured current in Secondary ( A ) | Measured current in Secondary ( A ) Phase Ref. | Injected current in Primary (A) | RELAY | ENERGY METER | ICT | AMMETER R | 75 | 75 | 75 | - | - Y | 75 | 75 | - | - | - B | 75 | 75 | 75 | - | -",
+      "[TABLE 8] Injected current in Primary (A) | Measured current in Secondary (mA) 10 | 78",
+      "[TABLE 9] MAKE | MICOM MODEL | 220 SL. NO. | 36193408/02/13",
+      "[TABLE 10] REF | INJECTED (A) | MEASURED(A) IN RELAY R | 5 | 75.00 Y | 5 | 74.78 B | 5 | 74.79",
+      "[TABLE 11] Phase | Injected Current (A) | Operated Time (Sec) RYB | 34.0 | 0.116",
+      "[TABLE 12] Phase | Injected Current (A) | Operated Time (Sec) RYB | 20.4 | 30.197",
+      "[TABLE 13] Phase | Injected Current (A) | Operated Time (Sec) RYB | 1.05 | 4.031",
+      "[TABLE 14] Phase | Injected Current (A) | Injected Current (A) | Injected Current (A) | Operated Time (Sec) | Operated Time (Sec) | Operated Time (Sec) Phase | X2 | X4 | X6 | X2 | X4 | X6 RYB | 2.1 | 4.2 | 6.3 | 4.020 | 2.888 | 1.927",
+      "[TABLE 15] Phase | Injected Current (A) | Operated Time (Sec) RYB | - | -",
+      "[TABLE 16] Phase | Injected Current (A) | Operated Time (Sec) RYB | 6.8 | 4.033",
+      "[TABLE 17] Phase | Injected Current (A) | Operated Time (Sec) Io | 5.1 | OPERATED",
+      "[TABLE 18] Make | - Type | - Sl. No. | - Rated Voltage | - Rated Current | - Control Voltage | -",
+      "[TABLE 19] Phase Ref. | Measured Resistance in Micro ohms R |  Y |  B |",
+      "[TABLE 20] S N | OBSERVATION | STATUS | RESULT 1 | Complete Tightness Of Relay Panel | DONE | OK 2 | Relay Measurement Testing | DONE | OK 3 | Relay Protection Testing | DONE | OK 4 | Relay Indications (ON/OFF/Trip) | DONE | OK 5 | Relay Communication (RXD & TXD) | - | - 6 | Binary Input & Binary Output Checking | - | - 7 | Cleaning of Auxiliary Relay | DONE | OK 8 | Cleaning of PCB cards of Numerical Relay (if required) | - | - 9 | Consolidate data & Control Scheme Checked | DONE | OK 10 | Trip of CB through Master Checked | DONE | OK 11 | Field Simulation of OTI/WTI/BUCH Fault Checked./ Motor Checked | - | - 12 | All CT Links Closed & Tightness Check after Testing | DONE | OK 13 | All Protection Settings Normalized after Testing | DONE | OK 14 | Testing DR Downloaded from the RELAY | - | - 15 | Auxiliary Relay (HR & SR) operation check. | DONE | OK"
+    ]
   }
 }

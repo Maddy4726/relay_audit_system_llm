@@ -1,0 +1,348 @@
+{
+  "document_metadata": {
+    "report_title": "RELAY FEEDER TEST REPORT",
+    "report_number": "RPT-2024-001",
+    "report_date": "15-Jan-2024",
+    "site_name": "Thermal Power Station Unit 3",
+    "plant_or_substation": null,
+    "bay_or_panel": null,
+    "equipment_tag": null,
+    "client_name": null,
+    "contractor_name": null,
+    "tested_by": "John Smith",
+    "approved_by": "Jane Doe",
+    "test_standard": null,
+    "revision": null,
+    "language": null
+  },
+  "feeder": {
+    "feeder_type": "motor",
+    "feeder_name": "Motor Feeder MF-101",
+    "feeder_tag": null,
+    "voltage_level": "6.6 kV",
+    "rated_current_a": 200.0,
+    "rated_power": null,
+    "power_unit": null,
+    "ct_ratio": null,
+    "vt_ratio": null,
+    "nameplate": null,
+    "motor_details": null,
+    "transformer_details": null,
+    "bus_coupler_details": null,
+    "remarks": null
+  },
+  "circuit_breaker": {
+    "tag": null,
+    "nameplate": {
+      "manufacturer": "ABB",
+      "type_or_model": null,
+      "serial_number": "VCB-2020-4455",
+      "rated_voltage_kv": "7.2 kV",
+      "rated_current_a": 630.0,
+      "rated_power_mva": null,
+      "rated_power_mw": null,
+      "year_of_manufacture": null,
+      "additional_fields": []
+    },
+    "breaker_type": "VCB",
+    "rated_voltage_kv": "7.2 kV",
+    "rated_current_a": 630.0,
+    "breaking_capacity_ka": "25 kA",
+    "operating_mechanism": null,
+    "control_voltage_v": null,
+    "close_coil_test": null,
+    "trip_coil_test": null,
+    "insulation_resistance_mohm": null,
+    "contact_resistance_μohm": null,
+    "timing_tests": [],
+    "functional_checks": [],
+    "remarks": null
+  },
+  "current_transformers": [
+    {
+      "tag": null,
+      "location": null,
+      "phase": "R",
+      "ratio": "200/5 A",
+      "accuracy_class": "5P20",
+      "knee_point_voltage_v": null,
+      "burden_va": "15 VA",
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [],
+      "excitation_test": [],
+      "remarks": null
+    },
+    {
+      "tag": null,
+      "location": null,
+      "phase": "Y",
+      "ratio": "200/5 A",
+      "accuracy_class": "5P20",
+      "knee_point_voltage_v": null,
+      "burden_va": "15 VA",
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [],
+      "excitation_test": [],
+      "remarks": null
+    },
+    {
+      "tag": null,
+      "location": null,
+      "phase": "B",
+      "ratio": "200/5 A",
+      "accuracy_class": "5P20",
+      "knee_point_voltage_v": null,
+      "burden_va": "15 VA",
+      "polarity_verified": null,
+      "insulation_test_mohm": null,
+      "ratio_test": [],
+      "excitation_test": [],
+      "remarks": null
+    }
+  ],
+  "relays": [
+    {
+      "tag": null,
+      "cubicle_or_panel": null,
+      "manufacturer": "Siemens",
+      "model": "7SJ82",
+      "serial_number": "SIM-7SJ82-0012",
+      "relay_technology": "numerical",
+      "relay_function": null,
+      "rated_voltage_v": null,
+      "ct_ratio_used": "200/5",
+      "vt_ratio_used": null,
+      "numerical_details": {
+        "firmware_version": "V4.82",
+        "configuration_version": null,
+        "communication_protocol": null,
+        "setting_group_active": null,
+        "setting_file_reference": null,
+        "event_counter_read": null,
+        "self_test_result": null
+      },
+      "electromechanical_details": null,
+      "installed_elements": [
+        "50",
+        "51"
+      ],
+      "remarks": null
+    }
+  ],
+  "relay_measurements": [],
+  "protection_tests": [
+    {
+      "category": "overcurrent",
+      "protection_code": "50",
+      "relay_label": null,
+      "description": "Instantaneous Overcurrent",
+      "settings": [
+        {
+          "name": "Setting",
+          "value": "10x In (2000 A)",
+          "unit": null,
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "Test Current Applied",
+          "parameter": "current",
+          "applied_value": "2005 A",
+          "expected_value": null,
+          "measured_value": null,
+          "unit": null,
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "Trip Time",
+          "parameter": "trip time",
+          "applied_value": null,
+          "expected_value": "< 80 ms",
+          "measured_value": "45 ms",
+          "unit": null,
+          "tolerance": null,
+          "result": "pass",
+          "remarks": null
+        }
+      ],
+      "overall_result": "pass",
+      "remarks": null,
+      "metadata": []
+    },
+    {
+      "category": "overcurrent",
+      "protection_code": "51",
+      "relay_label": null,
+      "description": "IDMT Overcurrent",
+      "settings": [
+        {
+          "name": "Curve Type",
+          "value": "Normal Inverse",
+          "unit": null,
+          "raw_text": null
+        },
+        {
+          "name": "TMS/Time Dial",
+          "value": 0.15,
+          "unit": null,
+          "raw_text": null
+        },
+        {
+          "name": "Pickup Current",
+          "value": "1.2x In (240 A)",
+          "unit": null,
+          "raw_text": null
+        }
+      ],
+      "test_points": [
+        {
+          "label": "3x pickup",
+          "parameter": "current",
+          "applied_value": "720 A",
+          "expected_value": null,
+          "measured_value": null,
+          "unit": null,
+          "tolerance": null,
+          "result": null,
+          "remarks": null
+        },
+        {
+          "label": "Measured Trip Time",
+          "parameter": "trip time",
+          "applied_value": null,
+          "expected_value": "2.80 s",
+          "measured_value": "2.85 s",
+          "unit": null,
+          "tolerance": null,
+          "result": "pass",
+          "remarks": "+1.8%"
+        }
+      ],
+      "overall_result": "pass",
+      "remarks": null,
+      "metadata": []
+    }
+  ],
+  "transformer_tests": [],
+  "lt_breaker": null,
+  "earth_fault_lt_relay": null,
+  "isolator": null,
+  "reactor": null,
+  "vacuum_contactor": null,
+  "final_checks": {
+    "overall_result": null,
+    "checklist": [
+      {
+        "item": "All protection elements tested satisfactorily.",
+        "result": null,
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "Relay sealed and commissioned.",
+        "result": null,
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      },
+      {
+        "item": "CT secondary circuits verified for continuity.",
+        "result": null,
+        "measured_value": null,
+        "expected_value": null,
+        "unit": null,
+        "remarks": null
+      }
+    ],
+    "interlocks_verified": [],
+    "alarms_verified": [],
+    "labels_and_placards_ok": null,
+    "tested_by": null,
+    "tested_date": null,
+    "witnessed_by": null,
+    "witnessed_date": null,
+    "remarks": null
+  },
+  "remarks": {
+    "general": "No abnormalities observed during testing. All settings as per protection coordination study Rev.3.",
+    "deficiencies": null,
+    "recommendations": null,
+    "safety_notes": null,
+    "additional_sections": []
+  },
+  "extraction_metadata": {
+    "source_file": "test_motor_feeder_MF101.docx",
+    "source_page_count": null,
+    "extracted_at": "2026-05-20T02:50:44.374862+00:00",
+    "extractor_version": "relay_audit_system",
+    "model_name": "gpt-4.1-mini",
+    "confidence_score": null,
+    "field_confidence": [],
+    "warnings": [],
+    "errors": [],
+    "raw_blocks": [
+      "RELAY FEEDER TEST REPORT",
+      "1. Document Information",
+      "Report Number: RPT-2024-001",
+      "Date of Test: 15-Jan-2024",
+      "Test Engineer: John Smith",
+      "Approved By: Jane Doe",
+      "2. Station & Feeder Details",
+      "Station Name: Thermal Power Station Unit 3",
+      "Feeder Name: Motor Feeder MF-101",
+      "Feeder Type: Motor Feeder",
+      "Voltage Rating: 6.6 kV",
+      "Current Rating: 200 A",
+      "3. Circuit Breaker Details",
+      "CB Make: ABB",
+      "CB Type: VCB",
+      "CB Serial Number: VCB-2020-4455",
+      "Rated Voltage: 7.2 kV",
+      "Rated Current: 630 A",
+      "Breaking Capacity: 25 kA",
+      "4. Current Transformers",
+      "5. Relay Details",
+      "Relay Make: Siemens",
+      "Relay Model: 7SJ82",
+      "Relay Serial Number: SIM-7SJ82-0012",
+      "Relay Type: Numerical",
+      "CT Ratio Setting: 200/5",
+      "Firmware Version: V4.82",
+      "6. Protection Settings & Test Results",
+      "Protection Element: 50 - Instantaneous Overcurrent",
+      "Setting: 10x In (2000 A)",
+      "Test Current Applied: 2005 A",
+      "Trip Time: 45 ms",
+      "Expected Time: < 80 ms",
+      "Result: PASS",
+      "Protection Element: 51 - IDMT Overcurrent",
+      "Curve Type: Normal Inverse",
+      "TMS/Time Dial: 0.15",
+      "Pickup Current: 1.2x In (240 A)",
+      "Test Point: 3x pickup (720 A)",
+      "Measured Trip Time: 2.85 s",
+      "Expected Trip Time: 2.80 s",
+      "Error: +1.8%",
+      "Result: PASS",
+      "7. Final Checks",
+      "All protection elements tested satisfactorily.",
+      "Relay sealed and commissioned.",
+      "CT secondary circuits verified for continuity.",
+      "8. Remarks",
+      "No abnormalities observed during testing. All settings as per protection coordination study Rev.3.",
+      "[TABLE 1]",
+      "Phase | CT Ratio | Make | Class | Burden",
+      "R | 200/5 A | Schneider | 5P20 | 15 VA",
+      "Y | 200/5 A | Schneider | 5P20 | 15 VA",
+      "B | 200/5 A | Schneider | 5P20 | 15 VA"
+    ]
+  }
+}
